@@ -92,7 +92,7 @@ body {
   box-sizing: content-box;
   z-index: 200;
   position: absolute;
-  top: 60px; /* 로그인 탭 아래에 겹치도록 위치 설정 */
+  top: 60px;
   left: 0;
   right: 0;
 }

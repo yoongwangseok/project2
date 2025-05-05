@@ -92,7 +92,142 @@ body {
   box-sizing: content-box;
   z-index: 200;
   position: absolute;
-  top: 60px; /* 로그인 탭 아래에 겹치도록 위치 설정 */
+  top: 60px;
   left: 0;
   right: 0;
+}
+
+#signup-username[type='text'] {
+  width: 346px;
+  height: 54px;
+  margin-bottom: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+label[for='signup-username'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+}
+
+#check-username-button {
+  width: 122px;
+  height: 54px;
+  margin-left: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #21bf48;
+  border-radius: 5px;
+  border: transparent;
+}
+
+#signup-password[type='password'] {
+  width: 480px;
+  height: 54px;
+  margin-bottom: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+label[for='signup-password'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+}
+
+#signup-password-confirm[type='password'] {
+  width: 480px;
+  height: 54px;
+  margin-bottom: 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+label[for='signup-password-confirm'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+}
+
+#signup-name {
+  width: 480px;
+  height: 54px;
+  margin-bottom: 16px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+label[for='signup-name'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+  padding-top: 50px;
+}
+
+#phone1,
+#phone2,
+#phone3 {
+  width: 152px;
+  height: 54px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+}
+
+label[for='phone1'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+}
+
+#phone1,
+#phone2 {
+  margin-right: 7px;
+}
+
+label[for='phone1'],
+label[for='phone2'],
+label[for='phone3'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.signup-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.signup-pipp {
+  font-size: 16px;
+  font-weight: 700;
+  color: #767676;
+}
+
+#signup-submit-button {
+  width: 480px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  border: transparent;
+  background-color: #c4c4c4;
 }
