@@ -28,6 +28,10 @@ body {
   height: 74px;
 }
 
+.signup-modal-content {
+  overflow-y: auto;
+}
+
 .signup-modal-container {
   background-color: transparent;
   width: 550px;
@@ -214,9 +218,10 @@ label[for='phone3'] {
   font-size: 16px;
   font-weight: 400;
   color: #767676;
+  margin-top: 34px;
 }
 
-.signup-pipp {
+.signup-privacy_policy {
   font-size: 16px;
   font-weight: 700;
   color: #767676;
@@ -230,4 +235,5 @@ label[for='phone3'] {
   color: #ffffff;
   border: transparent;
   background-color: #c4c4c4;
+  margin-top: 34px;
 }

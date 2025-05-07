@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/detail.css">
     <link rel="stylesheet" href="./src/css/login.css" />
     <link rel="stylesheet" href="./src/css/signup.css" />
   </head>
@@ -137,39 +138,75 @@
     </div>
 
     <div id="product-list">
-      <div class="product">
-        <img src="./src/img/main_img/img-0.png" alt="상품 1" />
+      <a href="javascript:void(0)" class="product" data-id="1" data-name="Hack Your Life 개발자 노트북 파우치" data-price="29000" data-img="./src/img/main_img/img-1.png">
+        <img src="./src/img/main_img/img-1.png" alt="상품 1" />
         <h3 class="product-title">우당탕탕 라이캣의 실험실</h3>
         <p class="product-name">Hack Your Life 개발자 노트북 파우치</p>
         <p class="product-price">29,000<span class="currency">원</span></p>
-      </div>
-      <div class="product">
-        <img src="./src/img/main_img/img-1.png" alt="상품 2" />
+      </a>
+      <a href="javascript:void(0)" class="product" data-id="2" data-name="네 개발잡니다 개발자키링 금속키링" data-price="29000" data-img="./src/img/main_img/img-2.png">
+        <img src="./src/img/main_img/img-2.png" alt="상품 2" />
         <h3 class="product-title">제주코딩베이스캠프</h3>
         <p class="product-name">네 개발잡니다 개발자키링 금속키링</p>
         <p class="product-price">29,000<span class="currency">원</span></p>
-      </div>
-      <div class="product">
-        <img src="./src/img/main_img/img-2.png" alt="상품 3" />
+      </a>
+      <a href="javascript:void(0)" class="product" data-id="3" data-name="딥러닝 개발자 무릎 담요" data-price="29000" data-img="./src/img/main_img/img-4.png">
+        <img src="./src/img/main_img/img-4.png" alt="상품 3" />
         <h3 class="product-title">백엔드글로벌</h3>
         <p class="product-name">딥러닝 개발자 무릎 담요</p>
         <p class="product-price">29,000<span class="currency">원</span></p>
-      </div>
-      <div class="product">
-        <img src="./src/img/main_img/img-3.png" alt="상품 4" />
+      </a>
+      <a href="javascript:void(0)" class="product" data-id="4" data-name="우당탕탕 라이캣의 실험실 스티커 팩" data-price="29000" data-img="./src/img/main_img/img-1.png">
+        <img src="./src/img/main_img/img-1.png" alt="상품 4" />
         <h3 class="product-title">코딩앤유</h3>
         <p class="product-name">우당탕탕 라이캣의 실험실 스티커 팩</p>
         <p class="product-price">29,000<span class="currency">원</span></p>
-      </div>
-      <div class="product">
-        <img src="./src/img/main_img/img-4.png" alt="상품 5" />
+      </a>
+      <a href="javascript:void(0)" class="product" data-id="5" data-name="버그를 Java라 버그잡는 개리씨 키링 개발자키링..." data-price="29000" data-img="./src/img/main_img/img-3.png">
+        <img src="./src/img/main_img/img-3.png" alt="상품 5" />
         <h3 class="product-title">파이썬스쿨</h3>
         <p class="product-name">
           버그를 Java라 버그잡는 개리씨 키링 개발자키링...
         </p>
         <p class="product-price">29,000<span class="currency">원</span></p>
+      </a>
+    </div>
+<!-- 상세페이지 모달 -->
+<div id="product-detail" class="detail-modal login-hidden">
+  <div id="header-container">
+    <div id="header">
+      <div id="logo-wrapper">
+        <img id="logo" src="./src/img/logo/Logo-hodu.png" alt="" />
+      </div>
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="상품명을 검색해보세요!"
+        />
+        <button type="submit">
+          <img src="./src/img/icon/search.png" alt="" />
+        </button>
+      </form>
+      <div id="buttons">
+        <button id="cart-button">
+          <img src="./src/img/icon/shopping-cart.png" alt="" />
+        </button>
+        <button id="login-button" type="button">
+          <img src="./src/img/icon/my-page.png" alt="로그인" />
+        </button>
       </div>
     </div>
+  </div>
+  
+  <div class="modal-content">
+    <!--상품 상세 내용-->
+    <div id="product-list"></div>
+
+    <!-- 상세 모달 영역: 내용 전체를 JS에서 채움 -->
+    <div id="product-detail" class="login-hidden"></div>
+  </div>
+</div>
     <!--로그인모달-->
     <div id="login-modal" class="login-modal login-hidden">
       <img id="login-modal-logo" src="./src/img/logo/Logo-hodu.png" alt="" />
@@ -295,8 +332,9 @@
       </div>
     </div>
   </div>
-  <p class="signup-text">호두샵의 이용약관 및 <a href="" class="signup-pipp">개인정보처리방침</a>에 대한 내용을 확인하였고 동의합니다.</p>
+  <p class="signup-text">호두샵의 이용약관 및 <a href="" class="signup-privacy_policy">개인정보처리방침</a>에 대한 내용을 확인하였고 동의합니다.</p>
     <button type="submit" id="signup-submit-button">가입하기</button>
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/detail.js"></script>
   </body>
 </html>
