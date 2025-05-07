@@ -173,15 +173,15 @@
     </div>
 <!-- 상세페이지 모달 -->
 <div id="product-detail" class="detail-modal login-hidden">
-  <div id="header-container">
-    <div id="header">
+  <div id="header-container-detail">
+    <div id="header-detail">
       <div id="logo-wrapper">
         <img id="logo" src="./src/img/logo/Logo-hodu.png" alt="" />
       </div>
-      <form id="search-form">
+      <form id="search-form-detail">
         <input
           type="text"
-          id="search-input"
+          id="search-input-detail"
           placeholder="상품명을 검색해보세요!"
         />
         <button type="submit">
@@ -189,10 +189,10 @@
         </button>
       </form>
       <div id="buttons">
-        <button id="cart-button">
+        <button id="cart-button-detail">
           <img src="./src/img/icon/shopping-cart.png" alt="" />
         </button>
-        <button id="login-button" type="button">
+        <button id="login-button-detail" type="button">
           <img src="./src/img/icon/my-page.png" alt="로그인" />
         </button>
       </div>
@@ -200,11 +200,12 @@
   </div>
   
   <div class="modal-content">
-    <!--상품 상세 내용-->
+    <!-- 여기에 상품 상세 내용이 들어갈 것임 -->
     <div id="product-list"></div>
 
-    <!-- 상세 모달 영역: 내용 전체를 JS에서 채움 -->
-    <div id="product-detail" class="login-hidden"></div>
+    <div id="product-detail" style="display: none;">
+      <img id="product-detail-image" src="" alt="Product Detail">
+    </div>
   </div>
 </div>
     <!--로그인모달-->
